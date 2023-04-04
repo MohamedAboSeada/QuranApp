@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quran App Project</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="toggle">
+          <button id="toggle-button"><i class="fa-regular fa-bars"></i></button>
+    </div>
+    <div id="sh" class="surahs">
+      <ul>
+        <!-- populated dynamically using JS -->
+      </ul>
+    </div>
+    <div class="main">
+    
+    
+    <div class="details">
+      <p id="page"></p>
+      <p id="reciters"><span id="reciter"></span></p>
+      <p><span id="surah-name"></span></p>
+      <p><span id="ayah-text"></span></p>
+      <p><span id="ayah-translation"></span></p>
+      <div class="bar"></div>
+    </div>
+    <div class="player">
+      <div class="buttons">
+        <button id="lastsurah"><i class="fa-regular fa-backward-fast"></i></button>
+        <button id="lastayah"><i class="fa-regular fa-backward-step"></i></button>
+        <button id="play"><i class="fa-regular fa-play"></i></button>
+        <button id="pause"><i class="fa-regular fa-pause"></i></button>
+        <button id="nextayah"><i class="fa-regular fa-forward-step"></i></button>
+        <button id="nextsurah"><i class="fa-regular fa-forward-fast"></i></button>
+      </div>
+      <div class="inside">
+        <audio src="" controls></audio>
+      </div>
+      <div class="ayahs">
+      <div class="frame">
+        <select id="ayah-select" disabled>
+         <option value="" selected disabled>Select an Ayah</option>
+        <!-- populated dynamically using JS -->
+        </select>
+      </div>
+      <h2>الايه</h2>
+    </div>
+    </div>
+    </div>
+  </div>  
+  <script src="js/main.js"></script>
+</body>
+</html>
